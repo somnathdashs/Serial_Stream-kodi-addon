@@ -2353,16 +2353,7 @@ def google_search_image(query):
 # Function to scrape HD image
 def scrape_hd_image(show, channel):
     try:
-        # Load cache
-        if osLinux or osWin:
-            try:
-                with open(CACHE_FILE, 'r') as cache_file:
-                    cache_data = json.load(cache_file)
-            except FileNotFoundError:
-                cache_data = {}
-
-            if show in cache_data:
-                return cache_data[show]
+        
 
         # Try custom scraper
         img1 = pro_image_extractor(show)
@@ -2372,12 +2363,6 @@ def scrape_hd_image(show, channel):
             # Fallback to Google search
             img2 = google_search_image(f"{show} show in {channel}")
             image_url = img2
-        
-        if osLinux or osWin:
-            # Update cache
-            cache_data[show] = image_url
-            with open(CACHE_FILE, 'w') as cache_file:
-                json.dump(cache_data, cache_file)
 
         return image_url
     except Exception as e:
