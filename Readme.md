@@ -23,7 +23,7 @@ Follow these steps to install the Serial Stream addon on your Kodi instance:
 
 1.  **Download the Addon:**
     Get the addon zip file (`sddev.serial.streamv2.5.zip`) from the following  link:
-    [**Download Addon**](https://github.com/somnathdashs/Serial_Stream-kodi-addon/releases/download/v2.5/sddev.serial.streamv2.5.zip)
+    [**Download Addon**](https://github.com/somnathdashs/Serial_Stream-kodi-addon/releases/download/v2.5/sddev.serial.streamv2.5.1.zip)
 
 2.  **Open Kodi:**
     Launch the Kodi application.
